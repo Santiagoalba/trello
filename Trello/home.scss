@@ -1,0 +1,225 @@
+$main-color: #0065ff;
+
+body{
+    font-family: 'Charlie Text',sans-serif;
+    margin: 0px;
+}
+
+header{
+    display: block;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    // position: sticky;
+    // top: 0px;
+    height: 70px;
+
+    .logo{
+
+        display: flex;
+        align-items: center;
+
+        img{
+            width: 60px;
+            object-fit: contain;
+        }
+    }
+
+    .nav-items{
+
+        align-items: center;
+        display: flex;
+        
+        ul{
+            list-style: none;
+            padding: 5px;
+            display: flex;
+            margin: 0;
+
+            li{
+                margin-right: 10px;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+            }
+
+            li:nth-child(2){
+                color: white;
+                background-color: $main-color;
+                border-radius: 3px;
+                padding: 8px 7px;
+
+                transition-duration: 1s;
+
+                &:hover{
+                    background-color: darkblue;
+                }
+            }
+        }
+    }
+}
+
+.navbar-display{
+    transition-duration:1s ;
+    background-color: white;
+}
+
+.hero{
+    background: linear-gradient(0deg, #fff, #eae6ff 100%);
+    padding-top: 200px;
+
+    .hero-container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        max-width: 1140px;
+
+        .hero-left{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+
+            h2{
+                font-size: 40px;
+                margin: 0;
+            }
+
+            h4{
+                font-size: 22px;
+                line-height: 1.7rem;
+                margin: 10px 0px 35px 0px;
+                font-weight: 100;
+            }
+
+            .hero-form{
+                display: flex;
+
+                input{
+                    margin-right: 12px;
+                    width: 55%;
+                    padding: 15px 7px;
+                    border: 1px solid #aaa;
+                    border-radius: 4px;
+                    font-size: 20px;
+                    color: #6d8ea2;
+                }
+
+                button{
+                    background-color: $main-color;
+                    border: none;
+                    border-radius: 3px;
+                    padding: 0 15px;
+                    color: white;
+                    width: 30%;
+                }
+            }
+        }
+
+        img{
+            width: 500px;
+        }
+    }
+}
+
+.product{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .product-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1140px;
+
+
+        .product-info{
+            text-align: center;
+            width: 70%;
+            
+            h2{
+                margin: 0;
+                font-size: 30px;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 1.5rem;
+                margin-top: 16px;
+                margin-bottom: 0;
+            }
+
+            p a{
+                border: 1px solid $main-color;
+                border-radius: 5px;
+                color: $main-color;
+                text-decoration: none;
+                padding: 10px 12px;
+                margin-top: 12px;
+
+                transition-duration: 300ms;
+
+                &:hover{
+                    background-color: $main-color;
+                    color: white;
+                }
+            }
+
+
+        }
+
+        img{
+           width: 70%;
+           margin: 20px 10px 0px 10px; 
+        }
+
+        .product-sponsors{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 18px;
+            color: #091e42;
+
+            .product-sponsors-logos{
+
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.features{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .features-container{
+        max-width: 1140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .features-main{
+
+            .features-info{
+                
+            }
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
