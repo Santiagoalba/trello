@@ -287,6 +287,10 @@ header {
       align-self: flex-start;
 }
 
+.features .features-container .main-information p {
+  line-height: 1.5rem;
+}
+
 .features .features-container .features-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,8 +347,8 @@ header {
   padding-left: 30px;
   font-size: 18px;
   font-weight: 400;
-  -webkit-transition: max-height 2s;
-  transition: max-height 2s;
+  -webkit-transition: max-height 500ms;
+  transition: max-height 500ms;
 }
 
 .features .features-container .features-main .features-info .expand ul {
@@ -425,7 +429,7 @@ header {
 }
 
 .checkout .checkout-container .checkout-div .checkout-info p {
-  font-size: 19px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -478,14 +482,15 @@ header {
 
 .customers .customers-container .swiper .swiper-wrapper .swiper-slide .swiper-left .image-container {
   width: 100%;
+  margin-bottom: 30px;
+  margin-right: 40px;
 }
 
 .customers .customers-container .swiper .swiper-wrapper .swiper-slide .swiper-left .image-container img {
-  width: 100%;
+  width: 150px;
 }
 
 .customers .customers-container .swiper .swiper-wrapper .swiper-slide .swiper-right {
-  margin-left: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -848,7 +853,13 @@ header {
             justify-content: center;
   }
   .customers .customers-container .swiper .swiper-wrapper .swiper-slide .swiper-left .image-container {
-    width: 220px;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .customers .customers-container .swiper .swiper-wrapper .swiper-slide .swiper-left h2, .customers .customers-container .swiper .swiper-wrapper .swiper-slide .swiper-left h3 {
     display: none;
@@ -856,6 +867,11 @@ header {
   .customers .customers-container .swiper .swiper-wrapper .swiper-slide .swiper-right {
     margin: 0;
     text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .customers .customers-container .swiper .swiper-wrapper .swiper-slide .swiper-right .quote-sign {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -880,6 +896,18 @@ header {
   .sign-up .sign-up-container .sign-up-container-main .sign-up-form button {
     width: 100%;
     padding: 10px 0;
+  }
+  .checkout .checkout-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .checkout .checkout-container .checkout-div {
+    margin: 0;
   }
   .apps {
     width: 90%;

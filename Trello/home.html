@@ -32,7 +32,7 @@
                         <div class="hero-left">
                             <h2>Trello helps teams move work forward.</h2>
                             <h4>Collaborate, manage projects, and reach new productivity peaks. From high rises to the home office, the way your team works is unique—accomplish it all with Trello.</h4>
-                            <form action="" class="hero-form">
+                            <form action="" method="POST" class="hero-form">
                                 <input type="email" name="email" id="email" placeholder="Email">
                                 <button class="sign-button" type="submit">Sign Up-It’s free</button>
                             </form>
@@ -257,8 +257,42 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">
+                        <div class="swiper-left">
+                            <div class="image-container">
+                                <img src="./images/egencia.svg" alt="egencia">
+                            </div>
+
+                            <h3>industry</h3>
+                            <h2>Travel</h2>
+                        </div>
+                        <div class="swiper-right">
+                            <p>Very simple to use, great automation and keeps me on track with all I need to do. I also like that it can be shared with others.</p>
+                            <div class="quote-sign">
+                                <h3>KERRY PARKER-EVANS</h3>                           
+                                <h2>IT Project Manager, Egencia</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="swiper-left">
+                            <div class="image-container">
+                                <img src="./images/detroit-red-wings.svg" alt="detroit">
+                            </div>
+
+                            <h3>industry</h3>
+                            <h2>Sport</h2>
+                        </div>
+                        <div class="swiper-right">
+                            <p>Trello makes it easy to keep everyone on the same page. As changes happen, the real-time updates with email notifications have been key.</p>
+                            <div class="quote-sign">
+                                <h3>HAYDON DOTSON</h3>                           
+                                <h2>Sales Manager, Detroit Red Wings</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
                     ...
                     </div>
                     <!-- If we need pagination -->
@@ -286,7 +320,7 @@
             <div class="sign-up-container">
                 <div class="sign-up-container-main">
                     <p>Sign up and get started with Trello today. A world of productive teamwork awaits!</p>
-                    <form class="sign-up-form">
+                    <form method="POST" action="/" class="sign-up-form">
                             <input type="email" placeholder="email">
                             <button type="submit">Sign Up</button>
                     </form>

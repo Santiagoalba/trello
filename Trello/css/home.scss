@@ -234,6 +234,10 @@ header{
         .main-information{
             width: 50%;
             align-self: flex-start;
+            
+            p{
+                line-height: 1.5rem;
+            }
         }
 
         .features-main{
@@ -282,7 +286,7 @@ header{
                     padding-left: 30px;
                     font-size: 18px;
                     font-weight: 400;
-                    transition: max-height 2s;
+                    transition: max-height 500ms;
                     ul{
                         line-height: 1.5;
                     }
@@ -344,7 +348,7 @@ header{
                 }
 
                 p{
-                    font-size: 19px;
+                    font-size: 20px;
                     line-height: 1.5;
                 }
 
@@ -392,16 +396,16 @@ header{
 
                         .image-container{
                             width: 100%;
+                            margin-bottom: 30px;
+                            margin-right: 40px;
 
                             img{
-                               width: 100%; 
+                               width: 150px; 
                             }
                         }
                     }
 
                     .swiper-right{
-
-                        margin-left: 30px;
                         display: flex;
                         flex-direction: column;
                         align-items: flex-end;
@@ -790,7 +794,10 @@ header{
                             justify-content: center;
             
                             .image-container{
-                                width: 220px;
+                                margin-right: 0;
+                                display: flex;
+                                justify-content: center;
+                                
                             }
                             
                             h2, h3 {
@@ -803,7 +810,9 @@ header{
                             text-align: center;
                             align-items: center;
 
-                            
+                            .quote-sign{
+                                align-items: center;
+                            }
                         }
                     }
                 }
@@ -843,6 +852,18 @@ header{
                         padding: 10px 0;
                     }
                 }
+            }
+        }
+    }
+
+    .checkout{
+
+        .checkout-container{
+            display: flex;
+            flex-direction: column;
+            
+            .checkout-div{
+                margin: 0;
             }
         }
     }
