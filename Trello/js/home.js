@@ -12,16 +12,13 @@ var learnMore = document.querySelectorAll(".learn-more");
 
 learnMore.forEach((item) => {
   item.addEventListener("click", () => {
+    console.log(item.nextElementSibling);
     item.nextElementSibling.classList.toggle("expanded");
     // item.nextElementSibling.style.height = "auto";
   });
 });
 
-// var learn = document.querySelector(".learn-more");
 
-// learn.addEventListener("click", () => {
-//   learn.nextElementSibling.style.height = "auto";
-// });
 
 const swiper = new Swiper(".swiper", {
   // Optional parameters
@@ -39,3 +36,14 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".button-prev",
   },
 });
+
+var languages = ['English', 'Spanish', 'French', 'Deustch'];
+
+languages.map((language) => {
+  const text = document.createTextNode(language);
+  const option = document.createElement('option');
+  option.appendChild(text);
+  document.querySelector('.select-lang').appendChild(option);
+})
+
+
