@@ -18,8 +18,6 @@ learnMore.forEach((item) => {
   });
 });
 
-
-
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   // direction: "vertical",
@@ -37,13 +35,19 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-var languages = ['English', 'Spanish', 'French', 'Deustch'];
+var languages = ["English", "Spanish", "French", "Deustch"];
 
 languages.map((language) => {
   const text = document.createTextNode(language);
-  const option = document.createElement('option');
+  const option = document.createElement("option");
   option.appendChild(text);
-  document.querySelector('.select-lang').appendChild(option);
-})
+  document.querySelector(".select-lang").appendChild(option);
+});
 
+var form = document.querySelector(".hero-form");
 
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let email = form.childNodes[1].value;
+  console.log(email);
+});
